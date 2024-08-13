@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <img src="/images/logo.svg" alt="company_logo" class="logo" />
+      <nav class="nav-desktop">
+        <ul>
+          <li class="features">
+            <span>Features</span>
+            <img
+              src="/images/icon-arrow-down.svg"
+              class="features-arrow-icon"
+            />
+            <ul class="features-list hidden">
+              <li><img src="/images/icon-todo.svg" /> Todo List</li>
+              <li><img src="/images/icon-calendar.svg" /> Calendar</li>
+              <li><img src="/images/icon-reminders.svg" /> Reminders</li>
+              <li><img src="/images/icon-planning.svg" /> Planning</li>
+            </ul>
+          </li>
+          <li class="company">
+            <span>Company</span>
+            <img src="/images/icon-arrow-down.svg" class="company-arrow-icon" />
+            <ul class="company-list hidden">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li class="careers">Careers</li>
+          <li class="about">About</li>
+        </ul>
+
+        <div class="sign-log-in">
+          <button class="login">Login</button>
+          <button class="signup">Register</button>
+        </div>
+      </nav>
+      <div class="menu">
+        <img
+          src="/images/icon-menu.svg"
+          class="icon-menu"
+          onclick="showMobileMenu()"
+        />
+      </div>
+    </header>
+
+    <div class="nav-mobile-container hidden">
+      <div class="nav-mobile">
+        <img
+          src="images/icon-close-menu.svg"
+          class="icon-close-menu"
+          onclick="hideMobileMenu()"
+        />
+        <ul>
+          <li class="features">
+            <div class="feature-text">
+              <span>Features</span>
+              <img
+                src="/images/icon-arrow-down.svg"
+                class="features-arrow-icon"
+              />
+            </div>
+
+            <ul class="features-list hidden">
+              <li><img src="/images/icon-todo.svg" /> Todo List</li>
+              <li><img src="/images/icon-calendar.svg" /> Calendar</li>
+              <li><img src="/images/icon-reminders.svg" /> Reminders</li>
+              <li><img src="/images/icon-planning.svg" /> Planning</li>
+            </ul>
+          </li>
+          <li class="company">
+            <div class="company-text">
+              <span>Company</span>
+              <img
+                src="/images/icon-arrow-down.svg"
+                class="company-arrow-icon"
+              />
+            </div>
+            <ul class="company-list hidden">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li class="careers">Careers</li>
+          <li class="about">About</li>
+        </ul>
+
+        <div class="sign-log-in">
+          <button class="login">Login</button>
+          <button class="signup">Register</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section>
+        <div class="section">
+          <h1>
+            Make <br />
+            remote work
+          </h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="learnmore">Learn more</button>
+        </div>
+        <div class="img-flex">
+          <img src="/images/client-databiz.svg" alt="client-databiz" /><img
+            src="/images/client-audiophile.svg"
+            alt="client-audiophile"
+          /><img src="/images/client-maker.svg" alt="client-maker" /><img
+            src="/images/client-meet.svg"
+            alt="client-meet"
+          />
+        </div>
+      </section>
+      <div class="img"></div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
