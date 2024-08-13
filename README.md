@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned about the use of JSON files for frontend projects.
+I learned about state management in frontend projects.
 
 ### Continued development
 
